@@ -35,7 +35,7 @@ console.log(sumOfDigits(101))
 console.log(sumOfDigitsOptimized(101))
 
 
-// Question 3: Count the number of digits of a number
+// [Question 3]: Count the number of digits of a number
 
 function numberOfDigits(n) {
     console.log({first:Math.abs(n)})
