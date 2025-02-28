@@ -28,9 +28,19 @@ function sumOfDigits(n) {
 function sumOfDigitsOptimized(n) {
     return String(n).split('').reduce((acc, curr) => {
         return acc += Number(curr)
-    },0)
+    }, 0)
 }
 
 console.log(sumOfDigits(101))
 console.log(sumOfDigitsOptimized(101))
+
+
+// Question 3: Count the number of digits of a number
+
+function numberOfDigits(n) {
+    console.log({first:Math.abs(n)})
+    return String(Math.abs(n)).split('').length
+}
+
+console.log(numberOfDigits(-102322.12212))
 
