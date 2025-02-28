@@ -16,4 +16,21 @@ console.log(sumOfNaturalNumberOptimized(100))
 
 
 // Question 2: Sum of digits of a number
+function sumOfDigits(n) {
+    let sum = 0;
+    while (n > 0) {
+        sum += n % 10
+        n = Math.floor(n / 10)
+    }
+    return sum
+}
+
+function sumOfDigitsOptimized(n) {
+    return String(n).split('').reduce((acc, curr) => {
+        return acc += Number(curr)
+    },0)
+}
+
+console.log(sumOfDigits(101))
+console.log(sumOfDigitsOptimized(101))
 
