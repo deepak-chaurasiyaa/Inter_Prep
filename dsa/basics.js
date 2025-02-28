@@ -7,5 +7,13 @@ function sumOfNaturalNumber(n) {
     }
     return sum;
 }
+function sumOfNaturalNumberOptimized(n) {
+    return (n * (n + 1)) / 2
+}
 
 console.log(sumOfNaturalNumber(100))
+console.log(sumOfNaturalNumberOptimized(100))
+
+
+// Question 2: Sum of digits of a number
+
