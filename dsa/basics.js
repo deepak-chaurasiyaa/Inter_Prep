@@ -75,3 +75,24 @@ function isPalindromeOpt(n) {
 
 console.log(isPalindrome(12321));
 console.log(isPalindromeOpt(12321));
+
+// [Question 5]: Find nth Fibonacci number
+
+function fibonacciOfNum(n) {
+  if (n < 2) {
+    return n;
+  }
+  let prev = 0,
+    curr = 1,
+    next;
+
+  for (let i = 2; i <= n; i++) {
+    next = prev + curr;
+    prev = curr;
+    curr = next;
+  }
+  return next;
+}
+
+console.log(fibonacciOfNum(5));
+console.log(fibonacciOfNum(10));
