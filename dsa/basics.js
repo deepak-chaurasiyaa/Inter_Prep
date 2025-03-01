@@ -96,3 +96,14 @@ function fibonacciOfNum(n) {
 
 console.log(fibonacciOfNum(5));
 console.log(fibonacciOfNum(10));
+
+// [Question 6]: Missing Number in an Array
+// Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
+
+function findMissingNum(arr) {
+  const n = arr.length + 1;
+  let sum = arr.reduce((acc, curr) => (acc += curr));
+  return n * ((n + 1) / 2) - sum;
+}
+
+console.log(findMissingNum([1, 3, 4, 5, 6, 7]));
