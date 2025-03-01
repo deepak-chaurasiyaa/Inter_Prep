@@ -38,9 +38,22 @@ console.log(sumOfDigitsOptimized(101))
 // [Question 3]: Count the number of digits of a number
 
 function numberOfDigits(n) {
-    console.log({first:Math.abs(n)})
-    return String(Math.abs(n)).split('').length
+    return String(Math.abs(n)).length;
 }
 
-console.log(numberOfDigits(-102322.12212))
+function numberOfDigitsOpt(n) {
+    n = Math.abs(n);
+    let length = 0;
+
+    while (n >= 1) {
+        length++;
+        n = Math.floor(n / 10);
+    }
+
+    return length;
+}
+
+console.log(numberOfDigits(12212));
+console.log(numberOfDigitsOpt(-10232));
+
 
