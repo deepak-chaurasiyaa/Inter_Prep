@@ -57,3 +57,25 @@ console.log(numberOfDigits(12212));
 console.log(numberOfDigitsOpt(-10232));
 
 
+// [Question 4]: Check if a number is palindrome
+
+function ifPalindrome(n) {
+    return n === Number(String(Math.abs(n)).split('').reverse().join(''))
+}
+
+function isPalindromeOpt(n) {
+    if (n < 0 || (n % 10 === 0 && n !== 0)) {
+        return false
+    }
+    let reversed = 0, original = n;
+    while (original > 0) {
+        let lastDigit = original % 10;
+        reversed = reversed * 10 + lastDigit;
+        original = Math.floor(original / 10)
+    }
+    return n === reversed
+}
+
+
+console.log(ifPalindrome(12321))
+console.log(isPalindromeOpt(1232321))
