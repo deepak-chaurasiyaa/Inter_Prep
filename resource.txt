@@ -1,0 +1,3 @@
+https://github.com/FrontendFreaks/DSA-in-JavaScript/blob/main/Array/README.md
+
+https://github.com/alok722/namaste-javascript-notes/blob/master/notes/season-2/lecture-01.md
